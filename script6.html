@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+    <script>
+        Personne={nom:"Ali",prenom:"salah",age:20,NomComplet : function(){
+            return this.prenom+" "+this.nom;
+        },
+        NomAvecTitre : function(titre){
+            return titre+":"+this.prenom+" "+this.nom;
+        }
+    };
+    console.log(Personne.NomComplet());
+    console.log(Personne.NomAvecTitre("Mr"));
+    </script>
+</body>
+</html>

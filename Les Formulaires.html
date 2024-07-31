@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="....">
+        Nom d'utilisateur : <br>
+        <input type="text"> <br>
+        Mot de passe :<br> 
+        <input type="password"> 
+    </form>
+    
+    <form method="post" action="mailto:etudiant@yahoo.fr">
+        Nom  : <br>
+        <input type="text" name="T1" size="20"> <br>
+        Prénom :<br> 
+        <input type="text" name="T2" size="20"> <br>
+        Commentaires :<br>
+        <textarea name="S1" rows="5" cols="23"></textarea>
+    </form>
+    <form method="post" action="mailto:etudiant@yahoo.fr">
+        Veuillez sélectionner  votre niveau d'etude :
+        <select size="1" name="ChoixNiveau">
+            <option> LSI1</option>
+            <option selected> LSI2</option>
+            <option>LSI3</option>
+        </select>
+    </form>
+    <form method="post" action="mailto:etudiant@yahoo.fr">
+        Veuillez indiquer votre état civil :<br>
+        <input type="radio" name="EtatCivil" value="M" checked> Monsieur <br>
+        <input type="radio" name="EtatCivil" value="Mme" > Madame <br>
+        <input type="radio" name="EtatCivil" value="Mlle" > Mademoiselle <br>
+    </form>
+    <form>
+        Entier 1 <input type="submit"  id="Entier1" name="E1" size="20"><br><br>
+        Entier 2 <input type="submit"  id="Entier2" name="E2" size="20"><br><br>
+        <input type="button" id="BtnSomme" name="BtnSomme"  >
+    </form>
+    <form>
+        <label for="choix">choix de la langue </label><br>
+        <input list="LesLangues" name="choix"
+    </form>
+</body>
+</html>

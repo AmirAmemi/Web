@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> Departement
+    <select id="selt">
+    <option value="v1">Math</option>
+    <option value="v2" selected>Chimie</option>
+    <option value="v3">Physiyque</option>
+    </select>
+    <input type="button" id="btn" value="Choix">
+    </form>
+    <script>
+    // Différentes manières de sélectionner une option
+    selt.options[0].selected=true;
+    alert("selection :" + selt.options[selt.selectedIndex].label);
+    selt.value = "v2";
+    alert("selection :" + selt.options[selt.selectedIndex].label);
+    selt.selectedIndex = 2;
+    alert("selection :" + selt.options[selt.selectedIndex].label);
+    // Lecture des infos de l'option sélectionnée
+btn.onclick = function(){
+let msg = "Le departement selectioné";
+msg += "   "+ selt.options[selt.selectedIndex].label;
+alert(msg);
+} 
+</script>
+</body>
+
+</html>

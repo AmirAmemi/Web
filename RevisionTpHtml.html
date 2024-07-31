@@ -1,0 +1,111 @@
+<!-- Exercice1 -->
+<!-- 1 -->
+<!DOCTYPE html> 
+       <html> 
+            <head> 
+                 <meta charset="utf-8" /> 
+                 <title>Ma première Page</title> 
+            </head> 
+ 
+            <body> 
+                 <h1>Titre 1</h1> 
+                 <p>Ahla bina    et bienvenue sur mon site !<br /> 
+Ceci est mon premier test alors soyez indulgents <em>s'il vous 
+plaît </em>, j'apprends petit à petit comment cela marche. 
+</p> 
+ 
+                 <h2>Titre 2</h2> 
+        
+                 <p>Pour l'instant c'est un peu vide, mais revenez dans  
+  <strong>2-3</strong> jours quand j'aurai appris un peu plus de   
+choses, je vous assure que vous allez être surpris !</p> 
+<h1> Ahla bikom </h1>
+         
+       
+<!-- 2 -->
+<!-- DONE   -->
+
+<!-- Exercice2 -->
+
+    <table border="1" cellspacing="0" height="20%" width="45%" >
+    <TR>
+        <TD>1</TD>
+        <TD colspan="2">2</TD>
+        
+    </TR>
+    <tr >
+        <td rowspan="2" >3</td>
+        <td>4</td>
+        <td>5</td>
+    </tr>
+        <tr>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td colspan="3" align="middle">8</td>
+        
+    </tr>
+</table>    
+
+<!-- Exercice3 -->
+<h1> Titre de l'entete de la page </h1>
+<ul>
+<li><a href="#">lien1</a></li> 
+<li><a href="#">lien2</a></li>
+<li><a href="#">lien3</a></li>
+<li><a href="#">lien4</a></li>
+</ul>
+<h2>Titre de la section</h2>
+<h3>Titre de bloc aside</h3>
+<section>contenu de bloc aside </section>
+<h4>Titre de l'article 1</h4>
+<section>contenu de l'articel1.. </section>
+<h5>Titre de l'article 2</h5>
+<section>contenu de l'articel2.. </section>
+<br>
+<fotter> 
+    <section>20200 All Rights Reserved </section> 
+    <nav><a href="#">Me contacter !</a></nav>
+</fotter>
+<!-- Exercice4 -->
+<br>
+<br>
+<form method="post">
+    <fieldset>
+    <legend>Authentification</legend>
+    Login : <input type="text" value="saisir votre login" ></input>
+    Mot de passe : <input type="text" value="saisir votre mot de passe" ></input><br>
+    <button >  Envoyer </button> <button>Effacer</button>
+</fieldset>
+</form>
+<!-- Exercice5 -->
+
+
+
+ 
+<form id="send_file" action="mailto:Example@gamil.com" method="post" >
+  <fieldset> 
+    <legend>identification</legend> 
+    <label>identifiant : <input name="id" size="15" type="text" required="required" pattern="^[a-z].*" autofocus="autofocus"
+        title="le nom doit impérativement commencer par une lettre minuscule"/></label><br/>
+    <label>mot de passe :
+  <input name="Password" size="15" type="password" required="required"
+             pattern="(?=^.{4,8}$)(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).*\W.*$"
+             title="le mot de passe doit contenir entre 4 et 8 caractères et avoir
+            au moins un chiffre, une lettre majuscule, une lettre minuscule
+            et un caractère d'un autre type (ponctuation, contrôle...)"/></label><br/>
+  </fieldset>
+  <fieldset> 
+    <legend>transfert de fichiers</legend> 
+    <input type="hidden" name="MAX_FILE_SIZE" value="3000"/>
+    <label>Choisir les fichiers : <input name="les_fichiers[]"
+                     type="file"
+                     multiple="multiple"/></label><br/>
+    <label>Pour envoyer : <input type="submit" name="envoyer" value="Valider"/></label>
+  </fieldset>
+</form>
+
+
+</body>
+</html>

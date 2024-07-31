@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+             .stl{
+                  width: 200px;
+                  height: 100px;
+                  display: block;
+                  background-color: lavender;
+                  text-align: center;                  
+                }
+        </style>
+        <script>
+            function btnClick(){
+
+                let mybtn = document.getElementById("btn");
+                let mybloc = document.getElementById("d1");
+                console.log(mybtn.innerHTML);                
+                if(mybtn.value=="Cacher"){
+                    mybloc.style.display="none";
+                    mybtn.value="Afficher";
+                    mybtn.textContent="Afficher le bloc";
+                }
+                else{
+                    mybloc.style.display="block";
+                    mybtn.value="Cacher";
+                    mybtn.textContent="Cacher le bloc";
+
+                }
+            }
+
+        </script>
+    </head>
+    <body >
+        <button id="btn" value="Cacher" onclick="btnClick()">Cacher le bloc</button><br><br>
+        <div id="d1" class="stl">
+            Ceci est un bloc de texte
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" name="myForm">
+    <input type="radio" id="ch1" name="lesChoix" value="Choix1" >
+    <label for="ch1">Math</label><br/>
+    <input type="radio" id="ch2" name="lesChoix" value="Choix2" >
+    <label for="ch2">Physique</label><br/>
+    <input type="radio" id="ch3" name="lesChoix" value="Choix3" checked>
+    <label for="ch3">Chimie</label><br/>
+    <input type="radio" id="ch4" name="lesChoix" value="Choix4">
+    <label for="ch4">Info</label><br/>
+    </form>
+    <script>
+        // Sélection d'un bouton radio
+        myForm.lesChoix.value = "Choix1";
+        // ou bien à l'aide de la propriété checked du bouton
+        //document.getElementById("ch1").checked = true;
+        // Lecture de la valeur du bouton sélectionné
+// Possibilité 1
+alert("Possibilité 1: "+myForm.lesChoix.value);
+// Possibilité 2
+let lesChoix = document.getElementsByName("lesChoix"); 
+let i;
+for(i = 0; i<lesChoix.length; i++){
+if(lesChoix[i].checked==true)
+break;
+}
+alert("Possibilité 2: "+ lesChoix[i].value);
+</script>
+</body>
+    
+</html>

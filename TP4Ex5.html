@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h2> Information personnelles</h2></legend> 
+    <form method="post" action="...." >
+        Nom &nbsp  &nbsp &nbsp  &nbsp &nbsp;
+        <input type="text" value="idnom" > <br> <br>
+        Prénom  &nbsp  &nbsp &nbsp;
+        <input type="password" value="idprenom"> <br>  <br>
+        Adresse &nbsp  &nbsp &nbsp;
+        <input type="text" name="T1" size="20"> <br> <br>
+        Ville  &nbsp &nbsp   &nbsp  &nbsp &nbsp  &nbsp;
+        <select size="1" name="ChoixNiveau">
+            <option> Sidibouzid</option>
+            <option selected> Monastir</option>
+            <option>Sousse</option>
+        </select> <br>
+    </form>
+</fieldset>
+<fieldset>
+    <legend><h2>Choix de l'option</h2></legend>
+    <form method="post" action="mailto:etudiant@yahoo.fr">
+         
+        <input type="radio" name="EtatCivil" value="op" checked> Génie logiciel <br>
+        <input type="radio" name="EtatCivil" value="GL" > Multimédia <br>
+       
+    </form>
+</fieldset>
+<fieldset>
+    <legend><h2> Choix des modules
+    </h2></legend>
+    <form method="POST" action="mailto:etudiant@yahoo.fr">
+        
+        <input type="checkbox" name="Check1" value="A1" checked> Réseaux informatiques 1<br>
+        <input type="checkbox" name="Check2" value="A2"> Programmation web <br>
+        <input type="checkbox" name="Check3" value="A3" >Bases de données
+        </form>
+    <form>
+
+    </form>
+</fieldset>
+<script>
+    function btnValiderClick(){
+        let parag = document.getElementById("res")
+        parag.innerHTML="Nom : " + Document.getElementById("idnom").value +'<br>'
+        parag.innerHTML="Prénom : " + Document.getElementById("idprenom").value +'<br>'
+        parag.innerHTML="Adresse : " + Document.getElementById("idadresse").value +'<br>'
+        parag.innerHTML="Ville : " + Document.getElementById("idVille").value +'<br>'
+        let op = myFrm.ChoixOption.value
+        if(op=="GL"){
+            parag.innerHTML += "Option : Génie logiciel"
+        else{
+            parag.innerHTML += "Option : Multimédia "
+
+            }
+        }
+    }
+function btnEffacerClick(){
+    Document.getElementById("res").innerHTML=""
+    Document.getElementById("idnom").value=""
+    Document.getElementById("idprenom").value=""
+    Document.getElementById("idadresse").value=""
+    Document.getElementById("idVille").value=""
+}
+</script>
+<button id="btn" value="res" onclick="btnValiderClick()">Valider</button><br><br>
+<button id="btn" value="res" onclick="btnEffacerClick()">Effacer</button><br><br>
+
+</body>
+</html>
